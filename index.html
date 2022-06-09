@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-left">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#1877f2" fill-rule="evenodd" d="M0 12.067C0 18.033 4.333 22.994 10 24v-8.667H7V12h3V9.333c0-3 1.933-4.666 4.667-4.666c.866 0 1.8.133 2.666.266V8H15.8c-1.467 0-1.8.733-1.8 1.667V12h3.2l-.533 3.333H14V24c5.667-1.006 10-5.966 10-11.933C24 5.43 18.6 0 12 0S0 5.43 0 12.067Z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="search">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="13px" height="13px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0z"/></svg><p> Cerca su Facebook</p>
+
+                
+            </div>
+            
+        </div>
+
+
+
+        <div class="nav-center">
+           
+            <svg class="home" viewBox="0 0 28 28" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 py1f6qlh" fill="blue" height="28" width="28"><path d="M17.5 23.979 21.25 23.979C21.386 23.979 21.5 23.864 21.5 23.729L21.5 13.979C21.5 13.427 21.949 12.979 22.5 12.979L24.33 12.979 14.017 4.046 3.672 12.979 5.5 12.979C6.052 12.979 6.5 13.427 6.5 13.979L6.5 23.729C6.5 23.864 6.615 23.979 6.75 23.979L10.5 23.979 10.5 17.729C10.5 17.04 11.061 16.479 11.75 16.479L16.25 16.479C16.939 16.479 17.5 17.04 17.5 17.729L17.5 23.979ZM21.25 25.479 17 25.479C16.448 25.479 16 25.031 16 24.479L16 18.327C16 18.135 15.844 17.979 15.652 17.979L12.348 17.979C12.156 17.979 12 18.135 12 18.327L12 24.479C12 25.031 11.552 25.479 11 25.479L6.75 25.479C5.784 25.479 5 24.695 5 23.729L5 14.479 3.069 14.479C2.567 14.479 2.079 14.215 1.868 13.759 1.63 13.245 1.757 12.658 2.175 12.29L13.001 2.912C13.248 2.675 13.608 2.527 13.989 2.521 14.392 2.527 14.753 2.675 15.027 2.937L25.821 12.286C25.823 12.288 25.824 12.289 25.825 12.29 26.244 12.658 26.371 13.245 26.133 13.759 25.921 14.215 25.434 14.479 24.931 14.479L23 14.479 23 23.729C23 24.695 22.217 25.479 21.25 25.479Z"></path></svg>
+    
+            <svg class="play" viewBox="0 0 28 28" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 g28tu32o" fill="currentColor" height="28" width="28"><path d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.164 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.164 11.654C17.612 11.924 17.612 12.575 17.164 12.846M21.75 2.75 6.25 2.75C4.182 2.75 2.5 4.432 2.5 6.5L2.5 18C2.5 20.068 4.182 21.75 6.25 21.75L21.75 21.75C23.818 21.75 25.5 20.068 25.5 18L25.5 6.5C25.5 4.432 23.818 2.75 21.75 2.75"></path></svg>
+    
+            <svg class="market" viewBox="0 0 28 28" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 g28tu32o" fill="currentColor" height="28" width="28"><path d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z"></path></svg>
+    
+            <svg class="group" viewBox="0 0 28 28" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 py1f6qlh" fill="currentColor" height="28" width="28"><path d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z"></path></svg>
+        
+    </div>
+
+
+
+     
+        <div class="nav-right">
+            <div class="user">
+                <img class="user-img" src="user.jpg" alt="user"> 
+                <p class="style-p">Laura</p>
+            </div>
+            <div class="icon-right">
+                <div class="cerchio-icone">
+                <svg class="icon-menu" fill="currentColor" viewBox="0 0 44 44" width="1em" height="1em" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 rs22bh7c jnigpg78 odw8uiq3"><circle cx="7" cy="7" r="6"></circle><circle cx="22" cy="7" r="6"></circle><circle cx="37" cy="7" r="6"></circle><circle cx="7" cy="22" r="6"></circle><circle cx="22" cy="22" r="6"></circle><circle cx="37" cy="22" r="6"></circle><circle cx="7" cy="37" r="6"></circle><circle cx="22" cy="37" r="6"></circle><circle cx="37" cy="37" r="6"></circle></svg>
+            </div>
+
+            <div class="cerchio-icone">
+   
+                <svg class="icon-message" viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 rs22bh7c" fill="currentColor" height="20" width="20"><path d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z"></path></svg>
+            </div>
+
+            <div class="cerchio-icone">
+
+                <svg class="icon-bell" viewBox="0 0 28 28" alt="" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 q66pz984" fill="currentColor" height="20" width="20"><path d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"></path></svg>
+            </div>
+
+            <div class="cerchio-icone">
+
+                <svg class="icon-arrow" fill="currentColor" viewBox="0 0 20 20" width="1em" height="1em" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4 rs22bh7c jnigpg78 odw8uiq3"><path d="M10 14a1 1 0 0 1-.755-.349L5.329 9.182a1.367 1.367 0 0 1-.205-1.46A1.184 1.184 0 0 1 6.2 7h7.6a1.18 1.18 0 0 1 1.074.721 1.357 1.357 0 0 1-.2 1.457l-3.918 4.473A1 1 0 0 1 10 14z"></path></svg>
+            </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+                               <!--        HOME PAGE    GRID CSS         -->
+
+                               <!--        HOME PAGE    LEFT SIDE         -->
+  <div class="container">
+
+
+
+
+    <div class="base-container">
+    <div class="container-home-left">
+    <div class="home-left-part-1">
+        
+        <div class="user-lateral">
+            <img class="user-img-lateral" src="user.jpg" alt="user"> 
+            <p class="style-p">Laura Saporoso</p>
+        </div>  
+        <ul style="width: 100%;">
+            <li class="home-left-icons left-hover">
+                <img style="width: 36px;height: 36px; margin-right: 10px;" src="users-icon.png" alt="">
+                <p class="style-p">Amici</p>
+            </li>
+            <li class="home-left-icons left-hover">
+                <img style="width: 36px;height: 36px; margin-right: 10px;" src="market-lateral-icon.png" alt="">
+                <p class="style-p">Marketplace</p>
+            </li>
+            <li class="home-left-icons left-hover">
+                <img style="width: 36px;height: 36px; margin-right: 10px;" src="group-icon.png" alt="">
+                <p class="style-p">Gruppi</p>
+            </li>
+            <li class="home-left-icons left-hover">
+                <img style="width: 36px;height: 36px; margin-right: 10px;" src="watch-icon.png" alt="">
+                <p class="style-p">Watch</p>
+            </li>
+            <li class="home-left-icons left-hover">
+                <img style="width: 36px;height: 36px; margin-right: 10px;" src="time-icon.png" alt="">
+                <p class="style-p">Ricordi</p>
+            </li>
+            <li class="home-left-icons left-hover">
+                <svg class="arrow-left icon-altro" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"/></svg>
+                <p class="style-p icon-altro" >Altro..</p>
+            </li>
+        </ul>
+        
+        <span class="span-left">I tuoi collegamenti rapidi</span>
+        
+        <ul>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons">
+                <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+            </li>
+            <li class="home-left-icons arrow">
+                <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"/></svg>
+                <p class="style-p">Altro..</p>
+            </li>
+        </ul>
+    
+    </div>
+    
+</div>
+</div>
+  
+
+                               <!--        HOME PAGE    MIDDLE SIDE         -->
+
+    <div class="home-center">
+        <div class="stories-container">
+            <div class="stories-rectangural">
+              <div class="white-square">
+              <p class="p-1-storia"> Crea una storia</p>
+            </div>
+            </div>
+            <div class="stories-rectangural">
+               
+                <p class="p-storia"> Marco Rossi</p>
+            </div>
+            <div class="stories-rectangural">
+              
+                <p class="p-storia"> Marco Rossi</p>
+            </div>
+            <div class="stories-rectangural">
+               
+                <p class="p-storia"> Marco Rossi</p>
+            </div>
+            <div class="stories-rectangural">
+               
+                <p class="p-storia"> Marco Rossi</p>
+            </div>
+        </div>
+
+      
+        <div class="home-container home-post">
+            <div class="write-post">
+                <img class="img-center" src="user.jpg" alt="">
+               <input type="text" class="bar-post" placeholder="A cosa stai pensando Laura?">
+            </div>
+            <div class="post-section-buttons">
+                
+                    <button type="button" class="button-post button-video"><svg fill="#F3425F" class="icone-post" viewBox="0 0 24 24" width="24px" height="24px" ><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="M113.029 2.514c-.363-.088-.746.014-1.048.234l-2.57 1.88a.999.999 0 0 0-.411.807v8.13a1 1 0 0 0 .41.808l2.602 1.901c.219.16.477.242.737.242.253 0 .508-.077.732-.235.34-.239.519-.65.519-1.065V3.735a1.25 1.25 0 0 0-.971-1.22m-20.15 6.563c.1-.146 2.475-3.578 5.87-3.578 3.396 0 5.771 3.432 5.87 3.578a.749.749 0 0 1 0 .844c-.099.146-2.474 3.578-5.87 3.578-3.395 0-5.77-3.432-5.87-3.578a.749.749 0 0 1 0-.844zM103.75 19a3.754 3.754 0 0 0 3.75-3.75V3.75A3.754 3.754 0 0 0 103.75 0h-10A3.754 3.754 0 0 0 90 3.75v11.5A3.754 3.754 0 0 0 93.75 19h10z" transform="translate(354 158.5)"></path><path d="M98.75 12c1.379 0 2.5-1.121 2.5-2.5S100.129 7 98.75 7a2.503 2.503 0 0 0-2.5 2.5c0 1.379 1.121 2.5 2.5 2.5" transform="translate(354 158.5)"></path></g></g></svg>
+                        <p>Video in diretta</p></button>
+                    
+                
+                <button type="button" class="button-post button-foto">
+                    <svg fill="#45BD62" viewBox="0 0 24 24" width="24px" height="24px" class="icone-post"><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="m96.968 22.425-.648.057a2.692 2.692 0 0 1-1.978-.625 2.69 2.69 0 0 1-.96-1.84L92.01 4.32a2.702 2.702 0 0 1 .79-2.156c.47-.472 1.111-.731 1.774-.79l2.58-.225a.498.498 0 0 1 .507.675 4.189 4.189 0 0 0-.251 1.11L96.017 18.85a4.206 4.206 0 0 0 .977 3.091s.459.364-.026.485m8.524-16.327a1.75 1.75 0 1 1-3.485.305 1.75 1.75 0 0 1 3.485-.305m5.85 3.011a.797.797 0 0 0-1.129-.093l-3.733 3.195a.545.545 0 0 0-.062.765l.837.993a.75.75 0 1 1-1.147.966l-2.502-2.981a.797.797 0 0 0-1.096-.12L99 14.5l-.5 4.25c-.06.674.326 2.19 1 2.25l11.916 1.166c.325.026 1-.039 1.25-.25.252-.21.89-.842.917-1.166l.833-8.084-3.073-3.557z" transform="translate(352 156.5)"></path><path fill-rule="nonzero" d="m111.61 22.963-11.604-1.015a2.77 2.77 0 0 1-2.512-2.995L98.88 3.09A2.77 2.77 0 0 1 101.876.58l11.603 1.015a2.77 2.77 0 0 1 2.513 2.994l-1.388 15.862a2.77 2.77 0 0 1-2.994 2.513zm.13-1.494.082.004a1.27 1.27 0 0 0 1.287-1.154l1.388-15.862a1.27 1.27 0 0 0-1.148-1.37l-11.604-1.014a1.27 1.27 0 0 0-1.37 1.15l-1.387 15.86a1.27 1.27 0 0 0 1.149 1.37l11.603 1.016z" transform="translate(352 156.5)"></path></g></g></svg>
+                    <p>Foto/video</p>
+                </button>
+                <button type="button" class="button-post button-stati-danimo">
+                    <svg fill="#F7B928" viewBox="0 0 24 24" width="24px" height="24px" class="icone-post"><g fill-rule="evenodd" transform="translate(-444 -156)"><g><path d="M107.285 13c.49 0 .841.476.712.957-.623 2.324-2.837 4.043-5.473 4.043-2.636 0-4.85-1.719-5.473-4.043-.13-.48.222-.957.712-.957h9.522z" transform="translate(353.5 156.5)"></path><path fill-rule="nonzero" d="M114.024 11.5c0 6.351-5.149 11.5-11.5 11.5s-11.5-5.149-11.5-11.5S96.173 0 102.524 0s11.5 5.149 11.5 11.5zm-2 0a9.5 9.5 0 1 0-19 0 9.5 9.5 0 0 0 19 0z" transform="translate(353.5 156.5)"></path><path d="M99.524 8.5c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m8.5 0c0 .829-.56 1.5-1.25 1.5s-1.25-.671-1.25-1.5.56-1.5 1.25-1.5 1.25.671 1.25 1.5m-.739 4.5h-9.522c-.49 0-.841.476-.712.957.623 2.324 2.837 4.043 5.473 4.043 2.636 0 4.85-1.719 5.473-4.043.13-.48-.222-.957-.712-.957m-2.165 2c-.667.624-1.592 1-2.596 1a3.799 3.799 0 0 1-2.596-1h5.192" transform="translate(353.5 156.5)"></path></g></g></svg>
+                    <p>Stato d'animo/attività</p>
+                </button>
+                
+            
+            </div>
+        </div>
+                <div class="home-container" style="margin-top:10px;  position: relative; height: 70px;contain: content;">
+                    <div class="stanza-section">
+
+                    <button type="button" class="button-crea-stanza" >
+                        <i data-visualcompletion="css-img" class="icona-crea-stanza" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/8m8W6qk28Db.png');background-position:0 -220px;background-size:502px 246px;width:24px;height:24px;background-repeat:no-repeat;display:inline-block; "></i>
+                        <p  style="display: block; margin-left: 5px;">Crea stanza</p> </button>
+
+
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    <img  class="img-center img-stanza" src="user.jpg" alt="">
+                </div>
+            </div>
+
+
+
+            
+
+         <div class="post-container" style="margin-bottom: 5px ;">
+            <div class="post">
+                <div class="info-container">
+                    <div class="img-post">
+                        <img  class="img-center img-stanza" src="user.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="name">Laura Saporoso</a>
+                        <a href="#" class="data">Ieri alle 20:21</a>
+                    </div>
+                    <div class="icon-pallini">
+                        <div class="icon-pallini-menu">
+                        <svg fill="#6e6e6e" viewBox="0 0 20 20" width="20" height="20" ><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                    </div>
+
+                </div> 
+              </div>
+                <p class="paragrafo-post">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempora culpa ipsam exercitationem suscipit dolorem neque ab illum molestiae blanditiis minima sapiente porro, tenetur ad dignissimos at unde obcaecati voluptates!
+                   
+                </p>
+              
+
+                <img class="immagine-post" src="immagine-post.png" alt="">
+
+                <div class="icon-e-condividi">
+                    <div class="reaction-post">
+                       <img  class="icon-reaction" src="smile-icon.svg" alt="">
+                       <img  class="icon-reaction" src="hand-icon.svg" alt="">
+                       <a href="#" style="margin-left: 8px;">45</a>
+                     </div>  
+                     <div class="reaction-condividi">
+                        
+                        <a href="#" style="color:  rgb(134, 134, 134);">Condivisioni: 3</a>
+                      </div>  
+                </div>
+
+                <div class="post-section-buttons" style="margin: 0 20px;">
+                
+                    <button type="button" class="button-post button-video"><i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -336px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                        <p>Mi Piace</p></button>
+                    
+                
+                <button type="button" class="button-post button-foto">
+                    <i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -296px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <p>Commenta</p>
+                </button>
+                <button type="button" class="button-post button-stati-danimo">
+                    <i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -356px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                    <p>Condividi</p>
+                </button>
+                
+               
+            </div>
+                <div class="comment-section ">
+                    <img  class="img-center img-stanza" style="width:30px ; height: 30px " src="user.jpg" alt="">
+                    <div class="background-commento bar-post">
+                    <div class="commento">
+                    <span style="color:#888888;;"> Scrivi un commento...</span>
+                    </div>
+                    <div class="icon-commento-container">
+                        <!--  SMILE icon   -->
+                    <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -502px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                    
+                    <!-- Photo icon   -->
+                    <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -448px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                
+                    <!--  gif icon   -->
+                    <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -520px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+
+                    <!--  sticker icon   -->
+                    <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -610px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                   </div>
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="post-container" style="margin-bottom: 5px ;">
+                <div class="post">
+                    <div class="info-container">
+                        <div class="img-post">
+                            <img  class="img-center img-stanza" src="user.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <a href="#" class="name">Laura Saporoso</a>
+                            <a href="#" class="data">Ieri alle 20:21</a>
+                        </div>
+                        <div class="icon-pallini">
+                            <div class="icon-pallini-menu">
+                            <svg fill="#6e6e6e" viewBox="0 0 20 20" width="20" height="20" ><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
+                        </div>
+    
+                    </div> 
+                  </div>
+                    <p class="paragrafo-post">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, tempora culpa ipsam exercitationem suscipit dolorem neque ab illum molestiae blanditiis minima sapiente porro, tenetur ad dignissimos at unde obcaecati voluptates!
+                       
+                    </p>
+                  
+    
+                    <img class="immagine-post" src="immagine-post.png" alt="">
+    
+                    <div class="icon-e-condividi">
+                        <div class="reaction-post">
+                           <img  class="icon-reaction" src="smile-icon.svg" alt="">
+                           <img  class="icon-reaction" src="hand-icon.svg" alt="">
+                           <a href="#" style="margin-left: 8px;">45</a>
+                         </div>  
+                         <div class="reaction-condividi">
+                            
+                            <a href="#" style="color:  rgb(134, 134, 134);">Condivisioni: 3</a>
+                          </div>  
+                    </div>
+    
+                    <div class="post-section-buttons" style="margin: 0 20px;">
+                    
+                        <button type="button" class="button-post button-video"><i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -336px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                            <p>Mi Piace</p></button>
+                        
+                    
+                    <button type="button" class="button-post button-foto">
+                        <i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -296px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                        <p>Commenta</p>
+                    </button>
+                    <button type="button" class="button-post button-stati-danimo">
+                        <i data-visualcompletion="css-img" class="hu5pjgll m6k467ps" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -356px; background-size: 26px 784px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                        <p>Condividi</p>
+                    </button>
+                    
+                   
+                </div>
+                    <div class="comment-section ">
+                        <img  class="img-center img-stanza" style="width:30px ; height: 30px " src="user.jpg" alt="">
+                        <div class="background-commento bar-post">
+                        <div class="commento">
+                        <span style="color:#888888;;"> Scrivi un commento...</span>
+                        </div>
+                        <div class="icon-commento-container">
+                            <!--  SMILE icon   -->
+                        <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -502px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                        
+                        <!-- Photo icon   -->
+                        <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -448px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                    
+                        <!--  gif icon   -->
+                        <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -520px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+    
+                        <!--  sticker icon   -->
+                        <i data-visualcompletion="css-img" class="icon-commento" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/JKIkisi6GFZ.png&quot;); background-position: 0px -610px; background-size: 26px 784px; width: 16px; height: 16px; background-repeat: no-repeat; display: inline-block;"></i>
+                       </div>
+                      </div>
+                    </div>
+    
+                </div>
+</div>    
+
+            
+
+                
+      </div>
+    </div>
+
+
+
+
+
+                               <!--        HOME PAGE    RIGHT SIDE         -->
+ 
+                               <div class="base-container">
+                                <div class="container-home-right">
+                                <div class="home-left-part-1">
+                                    
+                                    <div class="user-lateral">
+                                        <img class="user-img-lateral" src="user.jpg" alt="user"> 
+                                        <p class="style-p">Laura Saporoso</p>
+                                    </div>  
+                                    <ul style="width: 100%;">
+                                        <li class="home-left-icons left-hover">
+                                            <img style="width: 36px;height: 36px; margin-right: 10px;" src="users-icon.png" alt="">
+                                            <p class="style-p">Amici</p>
+                                        </li>
+                                        <li class="home-left-icons left-hover">
+                                            <img style="width: 36px;height: 36px; margin-right: 10px;" src="market-lateral-icon.png" alt="">
+                                            <p class="style-p">Marketplace</p>
+                                        </li>
+                                        <li class="home-left-icons left-hover">
+                                            <img style="width: 36px;height: 36px; margin-right: 10px;" src="group-icon.png" alt="">
+                                            <p class="style-p">Gruppi</p>
+                                        </li>
+                                        <li class="home-left-icons left-hover">
+                                            <img style="width: 36px;height: 36px; margin-right: 10px;" src="watch-icon.png" alt="">
+                                            <p class="style-p">Watch</p>
+                                        </li>
+                                        <li class="home-left-icons left-hover">
+                                            <img style="width: 36px;height: 36px; margin-right: 10px;" src="time-icon.png" alt="">
+                                            <p class="style-p">Ricordi</p>
+                                        </li>
+                                        <li class="home-left-icons left-hover">
+                                            <svg class="arrow-left icon-altro" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"/></svg>
+                                            <p class="style-p icon-altro" >Altro..</p>
+                                        </li>
+                                    </ul>
+                                    
+                                    <span class="span-left">I tuoi collegamenti rapidi</span>
+                                    
+                                    <ul>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons">
+                                            <img src="stack-icon.png" style="width: 36px;height: 36px; margin-right: 5px;" alt="icon"> Stack overflow
+                                        </li>
+                                        <li class="home-left-icons arrow">
+                                            <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="14" height="14" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M104.704 338.752a64 64 0 0 1 90.496 0l316.8 316.8l316.8-316.8a64 64 0 0 1 90.496 90.496L557.248 791.296a64 64 0 0 1-90.496 0L104.704 429.248a64 64 0 0 1 0-90.496z"/></svg>
+                                            <p class="style-p">Altro..</p>
+                                        </li>
+                                    </ul>
+                                
+                                </div>
+                                
+                            </div>
+                            </div>
+
+
+</body>
+</html>
