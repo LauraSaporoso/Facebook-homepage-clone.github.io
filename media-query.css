@@ -1,0 +1,144 @@
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    /*
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .base-container{
+        display: none;
+    }
+    .nav-left {
+        align-items: flex-start;
+    }
+    header {
+        display: flex;
+       flex-direction: column;  
+       height: 80px;
+       padding: 5px;
+    }
+    .nav-left {
+        justify-content: space-between;
+    }
+    .logo {
+        background: url('logo-2022.png') no-repeat top left ;
+        background-size: contain;
+        width: 120px;
+        height: 20px;
+        overflow: hidden;
+        line-height: 9999em;
+        display: block;
+    }
+    .search-icon {
+       color: black;
+       border-radius: 100%;
+       width: 20px;
+       margin-left: 10px;
+
+      
+    }
+    .p-search-mobile {
+        display: none;
+    }
+    .search {
+     width: 40px;
+     height: 40px;
+     padding: 0px;
+     align-items: ;
+       
+    }
+
+
+   /*     ---------------   menu mobile icons home play market...    ------------------ */
+/*
+   .nav-center {
+margin: 0;
+padding: 0;
+   }
+   .container-home,
+.container-play,
+.container-market,
+.container-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    
+}*/
+
+     /*                   HEADER MOBILE                      */ 
+   header {
+    display: none;
+   }
+   body {
+    background-color: #cccccc;
+}
+   .header-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 98px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+   }
+
+
+   /*                   NAV MOBILE                       */
+   .nav-mobile {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 30px;
+
+   }
+   .logo-mobile {
+    width: 120px;
+   }
+   .icons-mobile {
+    display: flex;
+
+    
+
+   }
+   .search-icon-mobile,
+   .icon-message-mobile {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 10px;
+   }
+
+   .icon-message-mobile {
+
+   }
+
+   /*                  MENU ICONS MOBILE                      */
+
+
+   .icons-menu-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0px 10px;
+   }
+   .user-mobile {
+    border-radius: 100%;
+    width: 28px;
+    color:rgb(53, 219, 11);
+   }
+    
+   /*             CREA POSTO MOBILE                  */
+
+
+
+
+    .container {
+        display: none;
+    }
+ }

@@ -17,6 +17,9 @@
 body {
     background-color: #f0f2f5;
 }
+.header-mobile {
+    display: none;
+}
 header {
     height: 56px;
     border-bottom: 1px solid rgb(226, 226, 226);
@@ -190,7 +193,7 @@ align-items: center;
                                                           /*    HOMEPAGE   */
 
 
-                                                          /*    HOMEPAGE ---- LEFT SIDE  */
+                                                    
 .container {
     display: grid;
     grid-template-columns: 25% 50% 25%;
@@ -199,7 +202,7 @@ align-items: center;
     
 }
 
-
+                                                         /*    HOMEPAGE ---- LEFT SIDE  */
 .base-container {
     position: relative;
     width: 100%;
@@ -700,3 +703,8 @@ height: 45px;
     background-color: #e6e6e6;
     cursor: pointer;
 }
+
+
+
+
+ 
