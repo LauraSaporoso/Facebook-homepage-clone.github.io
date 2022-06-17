@@ -24,6 +24,8 @@ body {
 .mobile-container {
     display: none;
 }
+
+
 header {
     height: 56px;
     border-bottom: 1px solid rgb(226, 226, 226);
@@ -76,7 +78,7 @@ header {
     align-items: center;
     justify-content:space-between ;
     width: 100%;
-    margin: 0 15% 0 10%;
+    margin: 0 15% 0 15%;
     padding: 5px 0 4px 0;
 }
 .icon-center {
@@ -86,7 +88,7 @@ header {
 
 .home {  
     
-    width: 30px;height: 30px;
+    width: 26px;height: 26px;
 }
 
 .container-home,
@@ -216,7 +218,7 @@ align-items: center;
     max-width: 100%;
     height: 100%;
     content: "";
-    
+    width: 100%;
     position: absolute;
     
 }
@@ -334,7 +336,7 @@ align-items: center;
 .stories-rectangural {
    
     height: 198px;
-    width: 105px;
+    width: 115px;
    
     border-radius: 15px;
     margin: 20px 4px;
@@ -343,7 +345,7 @@ align-items: center;
     
 }
 .stories-1{
-    background-image: url(img/user-1.jpg);
+    background-image: url(img-mobile/user-mobile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -515,6 +517,7 @@ img:hover {
     border-radius: 15px;
     margin-top: 20px;
 }
+
              /* INFO CONTAINER    */
 .info-container {
     padding: 15px 0 5px 15px ;
@@ -579,6 +582,7 @@ img:hover {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: rgb(124, 124, 124);
 }
 a:hover {
     text-decoration: underline;
