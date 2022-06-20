@@ -1,0 +1,298 @@
+:root {
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+    --blue:  #1876f2;
+ }
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ @media only screen and (max-device-width: 480px) {
+
+  /*           PARTE DESKTOP MODALITA MOBILE         */
+
+  .container {
+    display: none;
+}
+header {
+    display: none;
+   }
+     /*                   HEADER MOBILE                      */ 
+ 
+   body {
+    background-color: #cccccc;
+    width: 100%;
+   
+}
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+   .header-mobile {
+  
+    display: flex;
+    flex-direction: column;
+    height: 98px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+   }
+
+
+   /*                   NAV MOBILE                       */
+   .nav-mobile {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 30px;
+  
+
+
+   
+ 
+
+   }
+   .logo-mobile {
+    width: 120px;
+   }
+   .icons-mobile {
+    display: flex;
+
+    
+
+   }
+   .search-icon-mobile,
+   .icon-message-mobile {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 10px;
+   }
+
+
+   /*                  MENU ICONS MOBILE                      */
+
+
+   .icons-menu-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+   
+
+   }
+   .home-mobile,
+   .market-mobile,
+   .play-mobile,
+   .campana-mobile,
+   .heart-mobile {
+    
+    padding: 0px 14px 3px 14px;
+   }
+   .home-mobile {
+  margin-left: -8px;
+    border-bottom: 2px solid var(--blue);
+   }
+   .user-mobile {
+    border-radius: 100%;
+    width: 28px;
+   
+   }
+    
+   /*             CREA POST MOBILE             color:rgb(50, 196, 13);          */
+
+   .crea-post-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 13px;
+   }
+
+   .p-crea-post-mobile {
+    border: 1px solid rgb(204, 204, 204);
+    width: 100%;
+    border-radius: 15px;
+    padding: 6px 15px;
+    margin: 10px ;
+   }
+
+   .icon-photo-mobile {
+    width: 34px;
+    height: 34px;
+    margin: 0px 10px;
+   }
+
+   /*           STORIES CONTAINER MOBILE   parte scritte      */
+
+   .stories-container-mobile {
+ 
+    width: 100%; 
+  
+   
+    }
+    .stories-scritte-mobile {
+        display: flex;
+        width: 100%; 
+        
+        justify-content: space-between;
+        background-color: white;
+        border-bottom: 1px solid rgb(180, 180, 180);
+    }
+    .p-container-storie {
+        border-bottom: 3px solid var(--blue);
+       
+    }
+    .p-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px 10px;
+    }
+    .p-mobile {
+        padding: 12px;
+        font-weight: 500;
+        color: #6d6d6d;
+    
+    }
+
+   /*           STORIES CONTAINER MOBILE     parte rettangoli     */    
+   .stories-container-2-mobile{
+    background-color: white;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+   }
+   .container-rettangoli-mobile {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 15px;
+  
+
+    
+
+   }
+   .rettangoli-mobile {
+    
+    width: 110px;
+    height: 200px;
+    margin-right: 5px;
+    border-radius: 10px;
+    
+   }
+   .ret-bianco-mobile {
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgba(214, 214, 214, 0.955);
+    border-radius: 0 0 10px 10px;
+    display: flex ;
+    flex-direction: column-reverse;
+    text-align: center;
+    
+   }
+   .ret-1-mobile {
+    background-image: url(img-mobile/user-mobile.jpg);
+    background-size: 125px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+   flex-direction: column-reverse
+    
+   }
+
+   .plus-mobile {
+    background-color: var(--blue);
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 3px solid white;
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    
+   
+   }
+
+
+
+
+
+   .ret-2-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: url(img/storia-2.jpeg);
+    background-size: cover;
+   }
+   .ret-3-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: url(img/storia-4.jpeg);
+    background-size: cover;
+   }
+   .ret-4-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-image: url(img/storia-5.jpeg);
+    background-size: cover;
+   }
+   /*           PARTE POST MOBILE                */    
+
+.post {
+    border-radius: 0px;
+    margin-top: 10px;
+}
+.info-container {
+    display: flex;
+    padding: 10px 2px 5px 10px;
+   
+}
+.info {
+    width: 100%;
+}
+.icon-pallini-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.pallini-mobile {
+    margin-right: 20px;
+}
+
+.x-mobile {
+    width: 20px;
+    height: 20px;
+    margin-right: -15px;
+}
+
+.paragrafo-post {
+    font-size: 15px;
+}
+
+
+ }
