@@ -35,12 +35,10 @@ header {
     position: sticky;
 
    top: 0;
-
-   left: 0;
+z-index: 1000;
 
    width: 100%;
 
-   z-index: 9999px;
     background-color: white;
     
   
@@ -228,7 +226,7 @@ align-items: center;
     position: fixed;
     display: flex;
     flex-direction: column;
-    padding: 15px 10px;
+    padding: 15px 8px;
     font-size: 15px;
    min-width: 360px;
     height: 100%;
@@ -268,7 +266,7 @@ align-items: center;
 }
 .user-img-lateral {
     border-radius: 50%;
-    width: 38px;
+    width: 36px;
     margin-right: 10px;
 }
 
@@ -300,15 +298,6 @@ align-items: center;
 }
 
 
-.span-left {
-    
-    font-size: 17px;
-    color: rgb(117, 117, 117);
-    padding: 15px 8px;
-    font-weight: 500;
-    border-top: 1px solid rgb(204, 204, 204);
-    
-}
 
 
 
@@ -319,7 +308,7 @@ align-items: center;
                                                           /*    HOMEPAGE ---- STORIES  */
 .home-center {
    
-    max-width: 785px;
+    width: 785px;
     display: flex;
     align-items: center;
    padding: 0 80px;
@@ -347,12 +336,17 @@ align-items: center;
 
 .stories-1{
     background-image: url(img-mobile/user-mobile.jpg);
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-size: 135px;
+    background-position: top;
     background-repeat: no-repeat;
     display: flex;
+  
+   
+    
     flex-direction: column-reverse;
 }
+
 
 .stories-2,
 .stories-3,
@@ -365,31 +359,33 @@ align-items: center;
     flex-direction: column; 
 }
 .stories-2{
-    background-image: url(img/user-2.jpg);
+    background-image: url(img/storia-2.jpeg);
   
 }
 .stories-3{
-    background-image: url(img/user-3.jpg);
+    background-image: url(img/storia-4.jpeg);
    
 }
 .stories-4{
-    background-image: url(img/user-4.jpeg);
+    background-image: url(img/storia-3.jpeg);
   
 }
 .stories-5{
-    background-image: url(img/user-5.jpg);
+    background-image: url(img/storia-5.jpeg);
    
 }
 .white-square {
     display: flex;
     justify-content: center;
-    padding: 30px 25px 10px 25px;
+    padding: 25px 25px 8px 25px;
     flex-wrap: wrap;
     background-color: white;
     border-radius: 0px 0px 15px 15px;
 }
 .p-1-storia {
     font-size: 13px;
+    font-weight: 500;
+    text-align: center;
 
 }
 .p-storia {
@@ -637,19 +633,21 @@ a:hover {
 
 
 
-    /* HOME RIGHT SIDE   */
+    /*  ------------------------------- HOME RIGHT SIDE -----------------  */
 
 .first-block-right {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 15px;
+    padding: 10px;
     border-bottom: 1px solid rgb(187, 187, 187);
+    font-size: 17px;
 }
 
 .second-block-right {
     display: flex;
     justify-content: space-between;
-    padding:15px 0;
+    padding:10px;
+    font-size: 17px;
     align-items: center;
     
 }
@@ -666,24 +664,32 @@ border-radius: 100%;
 }
 .icon-pallini-right:hover {
 cursor:pointer;
-background-color: #b9b9b9;
+background-color: #eaeaea;
 }
 
 
+.mostra-tutto:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 .third-block-right {
 display: flex;
-padding: 10px 5px;
+padding: 15px 10px;
+margin-bottom: 10px;
 
 
 }
 .third-block-right:hover {
     background-color: #eaeaea;
     border-radius: 5px;
+    cursor: pointer;
 }
 .user-right {
 border-radius: 100%;
-width: 45px;
-height: 45px;
+width: 55px;
+height: 55px;
 
 }
 
@@ -718,9 +724,11 @@ height: 45px;
     
     background-color: var(--blue);
     color: white;
+    cursor: pointer;
 }
 .rimuovi {
     background-color:#d8d8d8;
+    cursor: pointer;
 }
 
 
@@ -731,3 +739,29 @@ height: 45px;
 
 
 
+.contatti-right {
+    
+    font-size: 17px;
+    color: rgb(117, 117, 117);
+    padding: 15px 8px;
+    font-weight: 500;
+    border-top: 1px solid rgb(204, 204, 204);
+    display: flex;
+    justify-content: space-between;
+}
+.icon-contatti {
+ margin-left: 10px;
+ 
+ width: 1.7em;
+ height: 1.7em;
+ 
+ border-radius: 50%;
+
+ padding: 6px;
+}
+.icon-contatti:hover {
+    cursor: pointer;
+    background-color: rgb(219, 219, 219);
+ 
+ 
+   }

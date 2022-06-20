@@ -1,0 +1,226 @@
+@media (min-width: 480px) and (max-width: 899px){
+
+
+    /* ---------------------NAV TABLET---------------------*/
+
+
+    /* ---------------------NAV LEFT TABLET---------------------*/
+   .p-search-tablet {
+    display: none;
+   }
+   .search {
+    width: 40px;
+    height: 40px;
+    background-color:#f0f2f5;
+     border-radius: 100%;
+    padding: 0;
+   }
+   .search-icon {
+     width: 14px;
+     height: 14px;
+     margin-left: 10px;
+   }
+    /* ---------------------NAV RIGHT TABLET---------------------*/
+    .nav-right {
+        margin-right: 0;
+    }
+    .user {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .icon-plus-tablet {
+        content: url(img-tablet/plus.png);
+        width: 16px;
+        height: 16px;
+    }
+    .icon-arrow {
+        display: none;
+    }
+    .user-nav-tablet {
+        content: url(img-mobile/user-mobile.jpg) ;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+    }
+
+
+    /* ---------------------HOME PAGE TABLET---------------------*/
+   .container {
+    grid-template-columns: 0% 100% 0%;
+   }
+   .container-home-left {
+    display: none;
+   }
+   .home-left-part-1 {
+    display: none;
+   }
+  .home-container{
+    min-width: 90%;
+   
+  }
+  .post {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+
+
+
+
+/*  --------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+@MEDIA MIN 769 MAX 1440 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 900px) and (max-width: 1099px) {
+  .container {
+    grid-template-columns: 0% 70% 30%;
+   }
+   .container-home-left {
+    display: none;
+   }
+   
+   .p-search-tablet {
+    display: none;
+   }
+   .search {
+    width: 40px;
+    height: 40px;
+    background-color:#f0f2f5;
+     border-radius: 100%;
+    padding: 0;
+   }
+   .search-icon {
+     width: 14px;
+     height: 14px;
+     margin-left: 10px;
+   }
+    /* ---------------------NAV RIGHT TABLET---------------------*/
+    .nav-right {
+        margin-right: 0;
+    }
+    .user {
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .icon-plus-tablet {
+        content: url(img-tablet/plus.png);
+        width: 16px;
+        height: 16px;
+    }
+    .icon-arrow {
+        display: none;
+    }
+    .user-nav-tablet {
+        content: url(img-mobile/user-mobile.jpg) ;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+    }
+    
+    /*--------------------storie -----------------------*/
+
+
+
+    /*------------------------ right side --------------*/
+
+    .home-right {
+      padding-left: 70%
+    }
+  }
+ 
+/*  --------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+@MEDIA MIN 900 MAX 906
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 900px) and (max-width: 906px) {
+
+  .stories-5 {
+    display: none;
+  }
+  .home-center {
+    width: 600px;
+    padding: 0 30px;
+  }
+  .stories-rectangural{
+    width: 135px;
+    height: 220px;
+  }
+ 
+}
+
+
+/*  --------------------------------------------------------------------------------------------------------------------------------------- 
+
+
+@MEDIA MIN 907 MAX 1099
+5 storie margin left delle storie ridotto 
+
+1099 1186    da 4 a 5 storie spunta parte sinistra
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 907px) and (max-width: 1099px) { 
+.home-center {
+  padding: 0px 150px 0px 35px;
+ 
+}
+.home-right {
+  margin-left: 20px;
+}
+.home-container {
+  min-width: 85%;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.post {
+  width: 85%;
+  
+}
+}
+
+/*   min 1099  max 1186    da 4 a 5 storie spunta parte sinistra
+-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1100px) and (max-width: 1186px) { 
+  .stories-5 {
+    display: none;
+  }
+  .home-center {
+    width: 550px;
+    padding: 0 40px;
+  }
+  .stories-rectangural{
+    width: 110px;
+    height: 220px;
+  }
+  .home-left-part-1 {
+    min-width: 280px;
+  }
+
+}
+
+@media (min-width: 1187px) and (max-width:1482px){ 
+  .home-center {
+    width: 600px;
+    padding: 0 20px;
+  }
+  .home-left-part-1 {
+    min-width: 280px;
+  }
+}
