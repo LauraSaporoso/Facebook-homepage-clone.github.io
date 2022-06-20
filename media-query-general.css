@@ -12,7 +12,7 @@
     width: 40px;
     height: 40px;
     background-color:#f0f2f5;
-     border-radius: 100%;
+    border-radius: 100%;
     padding: 0;
    }
    .search-icon {
@@ -47,9 +47,7 @@
 
 
     /* ---------------------HOME PAGE TABLET---------------------*/
-   .container {
-    grid-template-columns: 0% 100% 0%;
-   }
+   
    .container-home-left {
     display: none;
    }
@@ -64,10 +62,49 @@
     width: 90%;
     margin: 10px auto;
   }
+
+
+  .container {
+    grid-template-columns: 0% 100% 0%;
+   
+    padding: 0 auto;
+   }
+   
+   body {
+display: flex;
+flex-direction: column;
+
+align-items: center;
+   }
 }
 
+@media (min-width: 500px) and (max-width: 700px) {
+  .nav-center {
+    display: none;
+  }
+}
+@media (min-width: 500px) and (max-width: 640px){
 
 
+
+
+  .home-center {
+    width: 500px;
+    padding: 0;
+  }
+  .stories-5 {
+    display: none;
+  }
+  .home-container {
+    width: 100%;
+  }
+  
+
+  .post {
+    width: 100%;
+  }
+  
+}
 
 
 /*  --------------------------------------------------------------------------------------------------------------------------------------- 
@@ -127,7 +164,6 @@
     }
     
     /*--------------------storie -----------------------*/
-
 
 
     /*------------------------ right side --------------*/
